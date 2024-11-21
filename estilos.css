@@ -21,13 +21,12 @@ article {/*Damos formato a las cajas de artículo*/
     border-radius: 10px;
     margin-bottom: 20px;
 }
-.obras_teatro {
+.obras_teatro {/*Damos forma a cada una de las actuaciones del programa*/
     width: 100%;
     max-width: 1200px;
     background: #f3f3d1;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 img {
     max-width: 200px;
