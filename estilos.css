@@ -56,8 +56,9 @@ body {/*Damos formato general al formato de nuestra pagina*/
 
 
 /* Estilo global */
-body {
+section {
     margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,26 +69,27 @@ body {
 /* Contenedor principal */
 .main-container {
     display: flex;
+    justify-content: space-between; /* Justifica los contenedores en el eje X */
     gap: 10px; /* Espaciado pequeño entre los rectángulos */
-    width: 90%; /* Ancho máximo del contenedor */
-    max-width: 1200px; /* Ancho máximo fijo para pantallas grandes */
+    width: 90%; /* Ancho relativo al viewport */
+    max-width: 1200px; /* Limita el ancho en pantallas grandes */
 }
 
 /* Rectángulos */
 .rectangle {
     flex: 1; /* Todos los rectángulos ocupan el mismo espacio */
-    height: 200px; /* Altura fija */
+    height: 150px; /* Altura fija */
     background-color: #3498db;
-    border-radius: 8px; /* Bordes redondeados para un diseño más suave */
 }
 
-/* Media query para dispositivos móviles */
+/* Media query para dispositivos pequeños */
 @media (max-width: 768px) {
     .main-container {
         flex-direction: column; /* Apila los rectángulos verticalmente */
+        justify-content: center; /* Centra los rectángulos verticalmente */
     }
     .rectangle {
-        width: 100%; /* Ocupan todo el ancho disponible */
+        width: 100%; /* Ocupa todo el ancho disponible */
     }
 }
 
