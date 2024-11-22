@@ -54,45 +54,13 @@ body {/*Damos formato general al formato de nuestra pagina*/
 }
 
 
-
 /* Estilo global */
 section {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0;
-}
-
-/* Contenedor principal */
-.main-container {
-    display: flex;
-    justify-content: space-between; /* Justifica los contenedores en el eje X */
-    gap: 10px; /* Espaciado pequeño entre los rectángulos */
-    width: 90%; /* Ancho relativo al viewport */
-    max-width: 1200px; /* Limita el ancho en pantallas grandes */
-}
-
-/* Rectángulos */
-.rectangle {
-    flex: 1; /* Todos los rectángulos ocupan el mismo espacio */
-    height: 150px; /* Altura fija */
-    background-color: #3498db;
-}
-
-/* Media query para dispositivos pequeños */
-@media (max-width: 768px) {
-    .main-container {
-        flex-direction: column; /* Apila los rectángulos verticalmente */
-        justify-content: center; /* Centra los rectángulos verticalmente */
+        display: flex; /* Usamos flexbox */
+        flex-direction: row; /* Los elementos se organizan en filas (por defecto es 'row', pero lo especificamos) */
+        justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+        padding: 20px; /* Espaciado dentro del contenedor */
     }
-    .rectangle {
-        width: 100%; /* Ocupa todo el ancho disponible */
-    }
-}
-
 
 
 article {/*Damos formato a las cajas de artículo*/
