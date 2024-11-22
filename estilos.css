@@ -1,14 +1,22 @@
 
+*{margin: 0;
+}
 /* Damos forma al menu de navegacion */
 nav {
     background-color: #333; /* Damon un color oscuro al fondo de la barra de navegacion */
     padding: 10px 0; 
     width: 100%; /* Ensures the nav spans the full width */
     box-sizing: border-box; /* Includes padding in the total width calculation */
-    border-radius: 10px;
+    border-bottom-left-radius: 10px; /* Rounds the bottom-left corner */
+    border-bottom-right-radius: 10px; /* Rounds the bottom-right corner */
+    position: fixed; /* Makes the navbar fixed at the top of the page */
+    top: 0; /* Positions the navbar at the top of the page */
+    left: 0; /* Ensures the navbar is aligned to the left of the page */
+    z-index: 1000; /* Keeps the navbar above other content when scrolling */
+    width: 100%; /* Ensures the navbar spans the entire width of the viewport */
 }
 
-.menu_navegacion {
+    .menu_navegacion {
     list-style: none; /* Eliminamos los circulos delante da cada enlace */
     display: flex;
     justify-content: space-around;
@@ -40,17 +48,16 @@ nav {
 
 
 body {/*Damos formato general al formato de nuestra pagina*/
+    display: flex;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 70px; /*Este pading se asegura de que el cuerpo de la pagina no se solape bajo el nav bar*/
     background-color: #800000   ;
     color: #333;
-    display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
 }
 
 
@@ -107,12 +114,12 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('https://via.placeholder.com/1920x1080'); /* Replace with your image */
+    background-image: url('principal.jpg'); /* Replace with your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 90vh; /* Tamaño ocupado por nuestra imagen */
+    height: 100vh; /* Tamaño ocupado por nuestra imagen */
     box-sizing: border-box;
 }
 
