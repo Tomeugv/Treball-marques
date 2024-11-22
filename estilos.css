@@ -57,7 +57,7 @@ body {/*Damos formato general al formato de nuestra pagina*/
 /* Estilo global */
 section {
         display: flex; /* Usamos flexbox */
-        flex-direction: row; /* Los elementos se organizan en filas (por defecto es 'row', pero lo especificamos) */
+        flex-direction: column; /* Los elementos se organizan en filas (por defecto es 'row', pero lo especificamos) */
         justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
         padding: 20px; /* Espaciado dentro del contenedor */
     }
