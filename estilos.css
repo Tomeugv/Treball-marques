@@ -57,7 +57,7 @@ body {/*Damos formato general al formato de nuestra pagina*/
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    gap: 20px;
+
 }
 
 
@@ -114,7 +114,6 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('principal.jpg'); /* Replace with your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -125,17 +124,24 @@ p {
 
 /* Habilitamos que se pueda tener un bloque de texto translucido sobre la imagen */
 .texto_opaco {
-    position: absolute;
+    position: absolute; 
     top: 50%; /* Centramos verticalmente */
     left: 50%; /* Center horizontalmente */
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px 40px; /*Fijamos el tamaño dentro del bloque*/
     border-radius: 10px; /* Redondeamos los lados de nuestros bloques */
     text-align: center;
     max-width: 600px;
+}
+.texto_opaco h3 {
+    font-size: 200%;
+    color: white; /* Title color */
+}
 
+.texto_opaco p {
+    padding-top: 30px;
+    color: #999090; /* Different color for main text */
 }
 
 .cuerpo_sobre_nosotros {
@@ -146,3 +152,78 @@ p {
     border-radius: 10px;
     margin-bottom: 20px;
 }
+/* Estilos generales */
+.ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #800000;
+}
+
+.ubicacion_info,
+.horario_info,
+.contacto_info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    background: #fafafa   ;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ubicacion_info h1,
+.horario_info h1,
+.contacto_info h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ubicacion_info p,
+.horario_info p,
+.contacto_info p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.ubicacion_info iframe {
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.horario_info h2 {
+    font-size: 1.6rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.horario_info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.contacto_info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contacto_info li {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.contacto_info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contacto_info a:hover {
+    text-decoration: underline;
+}
+
