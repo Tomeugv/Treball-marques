@@ -39,8 +39,6 @@ nav {
 
 
 
-
-
 body {/*Damos formato general al formato de nuestra pagina*/
     font-family: Arial, sans-serif;
     margin: 0;
@@ -54,6 +52,45 @@ body {/*Damos formato general al formato de nuestra pagina*/
     gap: 20px;
     padding: 20px;
 }
+
+
+
+
+/* Estilo del cuerpo */
+section {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Altura mínima para ocupar toda la pantalla */
+    background-color: #f0f0f0;
+}
+
+/* Contenedor principal */
+.main-container {
+    display: flex;
+    gap: 20px; /* Espaciado entre rectángulos */
+}
+
+/* Rectángulos */
+.rectangle {
+    width: 20%; /* Ancho relativo */
+    aspect-ratio: 1 / 2; /* Proporción: más alto que ancho */
+    background-color: #3498db; /* Color del rectángulo */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Apila los rectángulos verticalmente */
+        align-items: center; /* Centra los rectángulos */
+    }
+    .rectangle {
+        width: 50%; /* Ancho mayor en pantallas pequeñas */
+    }
+}
+
+
 
 article {/*Damos formato a las cajas de artículo*/
     display: flex;
