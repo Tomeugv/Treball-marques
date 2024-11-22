@@ -62,7 +62,7 @@ body {/*Damos formato general al formato de nuestra pagina*/
 
 
 /* Estilo global */
-section {
+main {
         display: flex; /* Usamos flexbox */
         flex-direction: row; /* Los elementos se organizan en filas (por defecto es 'row', pero lo especificamos) */
         justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
@@ -136,4 +136,13 @@ p {
     text-align: center;
     max-width: 600px;
 
+}
+
+.cuerpo_sobre_nosotros {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
