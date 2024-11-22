@@ -1,4 +1,46 @@
 
+/* Damos forma al menu de navegacion */
+nav {
+    background-color: #333; /* Damon un color oscuro al fondo de la barra de navegacion */
+    padding: 10px 0; 
+    width: 100%; /* Ensures the nav spans the full width */
+    box-sizing: border-box; /* Includes padding in the total width calculation */
+    border-radius: 10px;
+}
+
+.menu_navegacion {
+    list-style: none; /* Eliminamos los circulos delante da cada enlace */
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+        
+/* Espacaiado entre menus */
+.menu_navegacion li {
+    flex: 1; /* Nos aseguramos de que cada opcion ocupe el mismo espacio */
+    text-align: center; /* Centramos el texto en el centro de cada bloque */
+}
+
+.menu_navegacion a {
+    text-decoration: none; /* Eliminamos la linea inferior sobre cada enlace */
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block; /* convertimos en enlace en un bloque clickeable */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Dar un efecto hover sobre cada opcion */
+.menu_navegacion a:hover {
+    background-color: #575757; /* Habilitamos que poniendo el raton sobre una opcion se haga un display extra */
+    border-radius: 5px; /* Redondeamos los lados de nuestro hover box */
+}
+
+
+
+
+
 body {/*Damos formato general al formato de nuestra pagina*/
     font-family: Arial, sans-serif;
     margin: 0;
@@ -22,6 +64,7 @@ article {/*Damos formato a las cajas de artículo*/
     margin-bottom: 20px;
 }
 .obras_teatro {/*Damos forma a cada una de las actuaciones del programa*/
+    display: flex;
     width: 100%;
     max-width: 1200px;
     background: #f3f3d1;
@@ -29,22 +72,32 @@ article {/*Damos formato a las cajas de artículo*/
     border-radius: 10px;
 }
 img {
+<<<<<<< Updated upstream
     max-width: 100%; /* Se ajusta al 100% del ancho del contenedor */
     height: auto; /* Mantiene las proporciones originales */
     border-radius: 10px; /* Esquinas redondeadas */
     display: block; /* Evita espacios extra alrededor de la imagen */
+=======
+    display: flex;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+>>>>>>> Stashed changes
 }
 
 h1 {
+    display: flex;
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
 h2 {
+    display: flex;
     font-size: 1.4rem;
     margin-bottom: 10px;
     color: #555;
 }
 p {
+    display: flex;
     line-height: 1.6;
     font-size: 1rem;
     color: #666;
