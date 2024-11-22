@@ -55,38 +55,35 @@ body {/*Damos formato general al formato de nuestra pagina*/
 
 
 
-
-/* Estilo del cuerpo */
+/* Estilo global */
 section {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Altura mínima para ocupar toda la pantalla */
+    min-height: 100vh;
     background-color: #f0f0f0;
 }
 
 /* Contenedor principal */
 .main-container {
     display: flex;
-    gap: 20px; /* Espaciado entre rectángulos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
 }
 
 /* Rectángulos */
 .rectangle {
-    width: 20%; /* Ancho relativo */
-    aspect-ratio: 1 / 2; /* Proporción: más alto que ancho */
-    background-color: #3498db; /* Color del rectángulo */
+    flex: 1; /* Distribuye uniformemente el espacio entre los contenedores */
+    height: 200px; /* Altura fija */
+    background-color: #3498db;
+    margin: 5px; /* Espacio entre los rectángulos */
 }
 
-/* Media query para pantallas pequeñas */
+/* Media query para dispositivos móviles */
 @media (max-width: 768px) {
-    .main-container {
-        flex-direction: column; /* Apila los rectángulos verticalmente */
-        align-items: center; /* Centra los rectángulos */
-    }
     .rectangle {
-        width: 50%; /* Ancho mayor en pantallas pequeñas */
+        flex: 0 0 100%; /* Cada rectángulo ocupa todo el ancho */
     }
 }
 
