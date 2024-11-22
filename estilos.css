@@ -72,7 +72,7 @@ article {/*Damos formato a las cajas de artículo*/
     border-radius: 10px;
 }
 img {
-   wid max-th: 200px;
+    max-width: 200px;
     height: auto;
     border-radius: 10px;
 }
