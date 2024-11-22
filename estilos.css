@@ -29,10 +29,12 @@ article {/*Damos formato a las cajas de artículo*/
     border-radius: 10px;
 }
 img {
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;
+    max-width: 100%; /* Se ajusta al 100% del ancho del contenedor */
+    height: auto; /* Mantiene las proporciones originales */
+    border-radius: 10px; /* Esquinas redondeadas */
+    display: block; /* Evita espacios extra alrededor de la imagen */
 }
+
 h1 {
     font-size: 1.8rem;
     margin-bottom: 10px;
