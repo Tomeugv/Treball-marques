@@ -107,7 +107,7 @@ p {
 }
 /* Damos formato a la imagen de fondo */
 .destacado {
-    display: flex;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -121,7 +121,6 @@ p {
 
 /* Habilitamos que se pueda tener un bloque de texto translucido sobre la imagen */
 .texto_opaco {
-    display: flex;
     position: absolute; 
     top: 60%; /* Centramos verticalmente */
     left: 50%; /* Center horizontalmente */
@@ -138,7 +137,6 @@ p {
 }
 
 .texto_opaco p {
-    display: flex;
     padding-top: 30px;
     color: #999090; /* Different color for main text */
 }
