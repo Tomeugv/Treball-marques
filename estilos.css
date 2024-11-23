@@ -45,8 +45,6 @@ nav {
     border-radius: 5px; /* Redondeamos los lados de nuestro hover box */
 }
 
-
-
 body {/*Damos formato general al formato de nuestra pagina*/
     display: flex;
     font-family: Arial, sans-serif;
@@ -57,18 +55,52 @@ body {/*Damos formato general al formato de nuestra pagina*/
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-
 }
 
-
-/* Estilo global */
 main {
-        display: flex; /* Usamos flexbox */
-        flex-direction: row; /* Los elementos se organizan en filas (por defecto es 'row', pero lo especificamos) */
-        justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
-        padding: 20px; /* Espaciado dentro del contenedor */
+    display: flex; /* Usamos flexbox para organizar las secciones */
+    flex-direction: row; /* Las secciones se organizan en fila */
+    justify-content: space-between; /* Espacio uniforme entre las secciones */
+    padding: 20px; /* Espaciado interno */
+    gap: 20px; /* Espaciado entre las secciones */
+}
+
+main > section {
+    flex: 1; /* Cada sección ocupa un espacio igual en el eje horizontal */
+    height: 400px; /* Doble de alto */
+    background-color: #f4f4f4; /* Fondo claro */
+    border: 1px solid #ccc; /* Borde opcional */
+    border-radius: 8px; /* Esquinas redondeadas */
+    display: flex; /* Usamos flexbox para organizar los elementos dentro de cada sección */
+    flex-direction: column; /* Organiza los elementos de arriba hacia abajo */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: space-around; /* Distribuye el espacio entre los elementos */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espaciado interno */
+}
+
+main > section h2,
+main > section h3,
+main > section p {
+    margin: 10px 0; /* Espaciado entre los elementos de texto */
+}
+
+main > section img {
+    max-width: 100%; /* La imagen no excede el ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 8px; /* Bordes redondeados en la imagen */
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Cambia las secciones a columnas en pantallas pequeñas */
     }
 
+    main > section {
+        height: 300px; /* Altura más pequeña en dispositivos pequeños */
+    }
+}
 
 article {/*Damos formato a las cajas de artículo*/
     display: flex;
@@ -107,7 +139,6 @@ p {
 }
 /* Damos formato a la imagen de fondo */
 .destacado {
-
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -224,3 +255,54 @@ p {
     text-decoration: underline;
 }
 
+footer {
+    background-color: #333; /* Fondo oscuro */
+    padding: 10px 0; /* Espaciado interno */
+    width: 100%; /* Se extiende a lo ancho de la pantalla */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+    border-top-left-radius: 10px; /* Esquinas redondeadas */
+    border-top-right-radius: 10px; /* Esquinas redondeadas */
+    position: fixed; /* Fija el footer en la parte inferior */
+    bottom: 0; /* Lo posiciona en la parte inferior */
+    left: 0; /* Lo alinea con el borde izquierdo */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    text-align: center; /* Centra el texto del footer */
+    color: white; /* Color del texto */
+    font-size: 14px; /* Tamaño de la fuente */
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Coloca los elementos a los extremos (izquierda y derecha) */
+    align-items: center; /* Alinea los elementos verticalmente */
+    padding: 10px 20px; /* Ajustamos un poco el padding para que no quede pegado a los bordes */
+}
+
+footer p {
+    margin: 0; /* Elimina el margen del párrafo */
+}
+
+footer a {
+    display: inline-block; /* Hace que el enlace sea un bloque en línea */
+}
+
+footer img {
+    max-width: 30px; /* La imagen no excede el 30% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    transition: width 0.3s ease-in-out; /* Transición suave al cambiar de tamaño */
+}
+
+/* Estilo adicional si deseas efectos al pasar el mouse */
+footer a:hover img {
+    opacity: 0.8; /* Efecto de opacidad al pasar el mouse sobre los iconos */
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        text-align: center; /* Alinea todo el contenido al centro */
+        padding: 15px; /* Ajusta el padding */
+    }
+
+    footer img {
+        max-width: 25px; /* Ajusta el tamaño de las imágenes en pantallas pequeñas */
+    }
+}
