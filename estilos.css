@@ -121,8 +121,9 @@ p {
 
 /* Habilitamos que se pueda tener un bloque de texto translucido sobre la imagen */
 .texto_opaco {
+    display: flex;
     position: absolute; 
-    top: 50%; /* Centramos verticalmente */
+    top: 60%; /* Centramos verticalmente */
     left: 50%; /* Center horizontalmente */
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.8);
@@ -137,6 +138,7 @@ p {
 }
 
 .texto_opaco p {
+    display: flex;
     padding-top: 30px;
     color: #999090; /* Different color for main text */
 }
