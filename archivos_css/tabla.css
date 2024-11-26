@@ -1,0 +1,33 @@
+/* Estilos generales para la tabla */
+table {
+    width: 100%; /* La tabla ocupará todo el ancho disponible */
+    border-spacing: 10px; /* Espacio entre las columnas */
+    border-collapse: separate; /* Asegura que las celdas estén separadas */
+    margin: 0 auto; /* Centra la tabla */
+  }
+  
+  /* Estilos para las celdas de la tabla */
+  th, td {
+    padding: 8px; /* Espaciado dentro de cada celda */
+    text-align: left; /* Alineación del texto */
+    word-wrap: break-word; /* Permite que el contenido largo se ajuste a la celda */
+  }
+  
+  /* Hacer la tabla responsive */
+  .table-container {
+    overflow-x: auto; /* Permite el desplazamiento horizontal cuando la tabla es más ancha que la pantalla */
+    -webkit-overflow-scrolling: touch; /* Mejora la experiencia en dispositivos táctiles */
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    /* Ajustes adicionales para pantallas pequeñas */
+    th, td {
+      padding: 10px 5px; /* Reduce el padding para pantallas pequeñas */
+    }
+    
+    table {
+      font-size: 14px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    }
+  }
+  
