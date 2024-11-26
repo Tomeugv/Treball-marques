@@ -1,35 +1,99 @@
-article {/*Damos formato a las cajas de artículo*/
+/* Estilos generales para los artículos */
+article {
     display: flex;
-    align-items: center; 
+    flex-direction: row; /* Alineación en fila para pantallas grandes */
+    align-items: center;
     gap: 20px;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
-.obras_teatro {/*Damos forma a cada una de las actuaciones del programa*/
+
+/* Contenedor para cada actuación */
+.obras_teatro {
     display: flex;
+    flex-direction: row; /* Elementos en fila */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas pequeñas */
     width: 100%;
     max-width: 1200px;
     background: #f3f3d1;
     padding: 20px;
     border-radius: 10px;
 }
+
+/* Estilos para las imágenes */
 img {
     max-width: 200px;
     height: auto;
     border-radius: 10px;
 }
+
+/* Encabezados y texto */
 h1 {
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
+
 h2 {
     font-size: 1.4rem;
     margin-bottom: 10px;
     color: #555;
 }
+
 p {
     line-height: 1.6;
     font-size: 1rem;
     color: #666;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    article {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinear al inicio */
+    }
+
+    .obras_teatro {
+        flex-direction: column; /* Reorganizar en columna */
+        align-items: center; /* Centrar contenido */
+        padding: 15px;
+    }
+
+    img {
+        max-width: 150px; /* Reducir tamaño de la imagen */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reducir tamaño de fuente */
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem; /* Reducir tamaño del texto */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .obras_teatro {
+        padding: 10px; /* Reducir el padding en dispositivos muy pequeños */
+    }
+
+    img {
+        max-width: 120px; /* Imagen aún más pequeña */
+    }
+
+    h1 {
+        font-size: 1.2rem; /* Ajuste de encabezado */
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
 }
