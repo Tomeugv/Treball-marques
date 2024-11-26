@@ -1,75 +1,78 @@
-
+/* Contenedor principal */
 .cuerpo_sobre_nosotros {
     display: flex;
-    align-items: center; 
+    flex-wrap: wrap; /* Ajusta automáticamente las secciones */
+    justify-content: center; /* Centra horizontalmente */
     gap: 20px;
     padding: 20px;
-    border-radius: 10px;
     margin-bottom: 20px;
 }
-/* Estilos generales */
+
+/* Sección general */
 .ubicacion {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    justify-content: center; /* Centra verticalmente en contenedores pequeños */
+    width: 100%; /* Ocupa todo el ancho disponible */
     padding: 20px;
     background-color: #800000;
+    border-radius: 10px;
+    text-align: center; /* Centra el texto */
 }
 
+/* Tarjetas de información */
 .ubicacion_info,
 .horario_info,
 .contacto_info {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1200px;
-    background: #fafafa   ;
-    margin-bottom: 20px;
+    flex: 1; /* Se expanden proporcionalmente */
+    min-width: 300px; /* Tamaño mínimo en píxeles */
+    max-width: 90%; /* Ocupan hasta el 90% del ancho disponible */
+    background: #fafafa;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el texto dentro de las tarjetas */
 }
 
-.ubicacion_info h1,
-.horario_info h1,
-.contacto_info h1 {
+/* Encabezado general debajo del nav */
+.titulo_contenedor {
+    text-align: center;
     font-size: 2rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Encabezados dentro de las tarjetas */
+h1 {
+    font-size: 1.8rem;
     color: #333;
     margin-bottom: 10px;
 }
 
-.ubicacion_info p,
-.horario_info p,
-.contacto_info p {
-    font-size: 1.2rem;
+/* Párrafos */
+p {
+    font-size: 1rem;
     color: #666;
     margin-bottom: 10px;
 }
 
-.ubicacion_info iframe {
+/* Mapas en iframes */
+iframe {
     border-radius: 10px;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 250px; /* Altura fija para el mapa */
     margin-top: 20px;
 }
 
-.horario_info h2 {
-    font-size: 1.6rem;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.horario_info p {
-    font-size: 1rem;
-    color: #666;
-}
-
+/* Lista de contactos */
 .contacto_info ul {
-    list-style-type: none;
-    padding-left: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .contacto_info li {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 5px;
 }
 
@@ -80,4 +83,63 @@
 
 .contacto_info a:hover {
     text-decoration: underline;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .cuerpo_sobre_nosotros {
+        flex-direction: column; /* Apila las secciones verticalmente */
+        align-items: center; /* Centra los contenedores */
+        gap: 15px;
+    }
+
+    .ubicacion_info,
+    .horario_info,
+    .contacto_info {
+        max-width: 100%; /* Ocupa el ancho completo */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+    }
+
+    p {
+        font-size: 0.9rem; /* Reduce el tamaño del texto */
+    }
+
+    iframe {
+        height: 200px; /* Reduce la altura del mapa */
+    }
+
+    .titulo_contenedor {
+        font-size: 1.8rem; /* Ajusta el tamaño del título general */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cuerpo_sobre_nosotros {
+        padding: 10px; /* Reduce el relleno para móviles */
+    }
+
+    .ubicacion_info,
+    .horario_info,
+    .contacto_info {
+        padding: 15px; /* Reduce el espacio dentro de las tarjetas */
+    }
+
+    h1 {
+        font-size: 1.2rem; /* Ajusta aún más los encabezados */
+    }
+
+    p {
+        font-size: 0.8rem; /* Ajusta el texto para móviles */
+    }
+
+    iframe {
+        height: 180px; /* Reduce la altura del mapa */
+    }
+
+    .titulo_contenedor {
+        font-size: 1.5rem; /* Ajusta el título general para móviles */
+    }
 }
