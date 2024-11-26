@@ -1,0 +1,35 @@
+article {/*Damos formato a las cajas de artículo*/
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.obras_teatro {/*Damos forma a cada una de las actuaciones del programa*/
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background: #f3f3d1;
+    padding: 20px;
+    border-radius: 10px;
+}
+img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #666;
+}

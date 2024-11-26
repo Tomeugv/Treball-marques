@@ -1,0 +1,83 @@
+
+.cuerpo_sobre_nosotros {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+/* Estilos generales */
+.ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #800000;
+}
+
+.ubicacion_info,
+.horario_info,
+.contacto_info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    background: #fafafa   ;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ubicacion_info h1,
+.horario_info h1,
+.contacto_info h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ubicacion_info p,
+.horario_info p,
+.contacto_info p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.ubicacion_info iframe {
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.horario_info h2 {
+    font-size: 1.6rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.horario_info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.contacto_info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contacto_info li {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.contacto_info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contacto_info a:hover {
+    text-decoration: underline;
+}

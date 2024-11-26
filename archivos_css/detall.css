@@ -1,0 +1,34 @@
+/* Damos formato a la imagen de fondo */
+.destacado {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; /* Tamaño ocupado por nuestra imagen */
+    box-sizing: border-box;
+}
+
+/* Habilitamos que se pueda tener un bloque de texto translucido sobre la imagen */
+.texto_opaco {
+    position: absolute; 
+    top: 60%; /* Centramos verticalmente */
+    left: 50%; /* Center horizontalmente */
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 40px; /*Fijamos el tamaño dentro del bloque*/
+    border-radius: 10px; /* Redondeamos los lados de nuestros bloques */
+    text-align: center;
+    max-width: 600px;
+}
+.texto_opaco h3 {
+    font-size: 200%;
+    color: white; /* Color del título */
+}
+
+.texto_opaco p {
+    padding-top: 30px;
+    color: #999090; /* Un color ligeramente diferente para el texto */
+}
