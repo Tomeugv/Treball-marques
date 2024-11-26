@@ -22,7 +22,9 @@
 
 - En la seccion de **articles.html** se ha optado por incluir únicamente imagenes para los tres eventos más proximos en el tiempo. Debido a falta de tiempo y para no llenar la carpeta de **/media.** de imagenes de caracter bastante irrelevante hemos optado por dejar en su lugar imagenes de "placeholder" que tinen la finalidad de enseñar el que seria el diseño final completo de nuestra página.
 
-- Al tener un archive de **estilos.css** que a medida que se trabajaba sobre la pagina iba aumetando en temaño, se optó por la creacion de diferentes archivos cada uno de ellos con una función concreta para poder así acceder a eelos y comprender su contenido con mayor claridad. En la carpeta **/archivos_css** se encuentran los ficheros de estilo especifico para las paginas de nuestra web y ademas un archivo con la finalidad de unicamente llevar a cabo el diseño de la tabla que añadimos. En el archivo **estilos.css** se ha dejado el codigo que hace referencia a toda la pagina, el diseño del **body**, el diseño de la barra de navegacion, etc.
+- Al tener un archivo de **estilos.css** que a medida que se trabajaba sobre la pagina iba aumetando en temaño, se optó por la creacion de diferentes archivos cada uno de ellos con una función concreta para poder así acceder a eelos y comprender su contenido con mayor claridad. En la carpeta **/archivos_css** se encuentran los ficheros de estilo especifico para las paginas de nuestra web y ademas un archivo con la finalidad de unicamente llevar a cabo el diseño de la tabla que añadimos. En el archivo **estilos.css** se ha dejado el codigo que hace referencia a toda la pagina, el diseño del **body**, el diseño de la barra de navegacion, etc.
+  
+- Al adaptar la web para hacerla responsive el formato del mapa de la sección **info.html**, este aparece más pequeño y no hemos conseguido que salga en un tamaño mayor para la resolución de ordenador.
 
 ## <span style="color:red;">3. Division del trabajo:</span>
 
@@ -37,3 +39,7 @@
 - **Trabajo realizado por Tomeu Garcias:** Todo el diseño de la pagina **articles.html** y el de **detall.html** y el estilo de css que ello conlleva ademas de el menú de navegacion y este archivo **readme.md** fueron realizados por Tomeu Gacias.
 
 - **Ademas de esto:** en la practica totalidad de los casos, el diseño de cada uno de los bloques de diseño css fueron realizados al mismo timpo que se iban construyendo sus análogos en html. De esta forma, nos aseguramos de que cada uno de los miembros del grupo nos puediesemos dividir el trabajo de forma equitativa. Dicho esto, se tiene que recalcar que esto no fue así para la adaptacion de la pagina para dispositivos de diferente resolucion, que fueren llevados a cabo por Jesus Muñoz.
+
+## <span style="color:red;">4. Formato responsive:</span>
+
+- Hemos optado por realizar un responsive que abarque un rango de resoluciones más elevado que el de un solo disposiivo, con el objetivo de que esta sea accesible en una mayor cantidad de dispositivos.

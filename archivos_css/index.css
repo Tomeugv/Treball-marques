@@ -1,23 +1,25 @@
+
 main {
     display: flex; /* Usamos flexbox para organizar las secciones */
     flex-direction: row; /* Las secciones se organizan en fila */
     justify-content: space-between; /* Espacio uniforme entre las secciones */
-    padding: 20px; /* Espaciado interno */
-    gap: 20px; /* Espaciado entre las secciones */
+    padding: 20px; 
+    gap: 20px; 
 }
 
 main > section {
     flex: 1; /* Cada sección ocupa un espacio igual en el eje horizontal */
     height: 400px; /* Doble de alto */
     background-color: #f4f4f4; /* Fondo claro */
-    border: 1px solid #ccc; /* Borde opcional */
-    border-radius: 8px; /* Esquinas redondeadas */
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
     display: flex;
     flex-direction: column; /* Organiza los elementos de arriba hacia abajo */
     align-items: center; /* Centra los elementos horizontalmente */
     justify-content: space-around; /* Distribuye el espacio entre los elementos */
     text-align: center; /* Centra el texto */
     padding: 20px;
+    overflow: hidden; /* Evita que el contenido se desborde */
 }
 
 main > section h2,
@@ -28,8 +30,10 @@ main > section p {
 
 main > section img {
     max-width: 100%; /* La imagen no excede el ancho del contenedor */
+    max-height: 100%; /* Asegura que la imagen no exceda la altura del contenedor */
     height: auto; /* Mantiene la relación de aspecto */
-    border-radius: 8px; /* Bordes redondeados en la imagen */
+    border-radius: 8px; 
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
 }
 
 /* Estilo responsivo */
@@ -39,6 +43,11 @@ main > section img {
     }
 
     main > section {
-        height: 300px; /* Altura más pequeña en dispositivos pequeños */
+        height: auto; /* Ajusta la altura automáticamente según el contenido */
+        padding: 15px; 
+    }
+
+    main > section img {
+        max-height: 200px; /* Limita la altura de las imágenes en pantallas pequeñas */
     }
 }
