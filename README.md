@@ -24,6 +24,8 @@
 
 - Al tener un archivo de **estilos.css** que a medida que se trabajaba sobre la pagina iba aumetando en temaño, se optó por la creacion de diferentes archivos cada uno de ellos con una función concreta para poder así acceder a eelos y comprender su contenido con mayor claridad. En la carpeta **/archivos_css** se encuentran los ficheros de estilo especifico para las paginas de nuestra web y ademas un archivo con la finalidad de unicamente llevar a cabo el diseño de la tabla que añadimos. En el archivo **estilos.css** se ha dejado el codigo que hace referencia a toda la pagina, el diseño del **body**, el diseño de la barra de navegacion, etc.
   
+- El **settings.json** ha sido creado auttonmáticamente por visual studio code.
+  
 - Al adaptar la web para hacerla responsive el formato del mapa de la sección **info.html**, este aparece más pequeño y no hemos conseguido que salga en un tamaño mayor para la resolución de ordenador.
 
 ## <span style="color:red;">3. Division del trabajo:</span>
