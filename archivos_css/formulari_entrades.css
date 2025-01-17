@@ -1,47 +1,60 @@
+/* Secció del css dedicada integrament al formulari de entrades */
 .formulario_entrades {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centra horizontalment el bloc */
+    width: 100%;
+    padding: 30px; /* Augmenta l'espaciat al voltant del bloc */
     margin-top: 20px;
 }
-
+/* Contenidor del formulari */
 .formulario_venda {
-    background: #fafafa;
+    background: #fafafa; /*Color de fons*/
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 500px;
     text-align: left;
 }
 
+.formulario_venda div {
+    display: inline-flex;
+    align-items: center; /* Alineam verticalment les checkboxes i les seves etiquetes */
+    gap: 5px; /* Fixam l'espaiat entre les checkboxes i les seves etiquetes */
+}
+
+.formulario_venda input[type="checkbox"] {
+    margin: 0; /* Eliminam els marges de les checkboxes */
+}
+/* Estil dels labels */
 .formulario_venda label {
     display: block;
     margin-bottom: 5px;
-    font-size: 1rem;
+    font-size: 1rem; /*canviam el tamany de la font del text*/
     color: #333;
 }
 
+/* Estil dels camps de entrada i selectors */
 .formulario_venda input,
 .formulario_venda select {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #ddd; /*configuram les voreres dels selectors i els camps de text*/
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1rem; /*canviam el tamany de la font del text*/
+    box-sizing: border-box; /* Asegura un padding consistent */
 }
-
+/* Estilo del botón de envío */
 .formulario_venda button {
-    background-color: #800000;
-    color: white;
-    border: none;
+    background-color: #800000; /*color de fons del botó*/
+    color: white; /*color del text dins el botó*/
+    border: none; /*ens aseguram que no hi hagi un marge al voltat*/
     padding: 10px;
     border-radius: 5px;
-    cursor: pointer;
     width: 100%;
-    font-size: 1rem;
+}
+/* Estil al pasar el ratolí a sobre el botó */
+.formulario_venda button:hover {
+    background-color: #660000; /*Canviam lleugerament el color del boto cuan posem el ratolí a sobre*/
 }
 
-.formulario_venda button:hover {
-    background-color: #660000;
-}

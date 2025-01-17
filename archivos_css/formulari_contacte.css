@@ -28,7 +28,7 @@
 .formulario_contacto label {
     display: block; /* Asegura que cada etiqueta estigui a una nueva linia */
     text-align: left; /* Alineam les etiquetes a l'esquerra */
-    margin-bottom: 10px; /* Espaciat entre els camps */
+    margin-bottom: 10px; /* Espaiat entre els camps */
 }
 
 /* Camps d'entrada i area de text */
@@ -37,22 +37,21 @@
     padding: 8px; /* Ajusta el tamany dels camps */
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin-bottom: 20px; /* Espaciado entre els camps */
+    margin-bottom: 20px; /* Espaiat entre els camps */
 }
-
 /* Botó de enviament */
 .formulario_contacto button {
-    background-color: #800000;
-    color: white;
-    border: none;
-    padding: 10px 20px; /* Ajusta el tamany del botó */
+    background-color: #800000; /*color de fons del botó*/
+    color: white; /*color del text dins el botó*/
+    border: none; /*ens aseguram que no hi hagi un marge al voltat*/
+    padding: 10px 20px; /* Ajustam el tamany del botó */
     border-radius: 5px;
     width: 80%;
     max-width: 300px;
 }
-
+/* Estil al pasar el ratolí a sobre el botó */
 .formulario_contacto button:hover {
-    background-color: #660000;
+    background-color: #660000; /*Canviam lleugerament el color del boto cuan posem el ratolí a sobre*/
 }
 
 

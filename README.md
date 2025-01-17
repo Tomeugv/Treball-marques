@@ -8,6 +8,8 @@
         - **index.css**  Continene los estilos usados unicamene en index.html.
         - **info.css**  Continene los estilos usados unicamene en info.html.
         - **tabla.css** Contiene el estilo usado en nuestra página
+        - **tabla.css** Contiene el estilo usado en nuestra página
+        - **tabla.css** Contiene el estilo usado en nuestra página
     - **/media.** Todas las imagnes que se usan en la pagina web estan alojadas en esta carpeta.
     - **detall.html** En esta sección se encuentra la descripción detallada de uno de los eventos que se llevarán a cabo en los proximos dias.
     - **info.html** Aqui se puede encontrar la información detallada del Teatro.
