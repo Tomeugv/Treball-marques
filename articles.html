@@ -16,10 +16,10 @@
 <header>
    <nav> <!-- Definint un nav deixa clar que es tracta d'un menu de navegació-->
        <ul class="menu_navegacion"> <!--Definim que el bloc prendrà la forma d'una llista-->
-           <li><a href="index.html">Inicio</a></li> <!--Cada un dels items ens permet navegar entre les diferents seccions de la nostra pagina-->
+           <li><a href="index.html">Inici</a></li> <!--Cada un dels items ens permet navegar entre les diferents seccions de la nostra pagina-->
            <li><a href="articles.html">Programa 24/25</a></li>
-           <li><a href="detall.html">Destacados</a></li>
-           <li><a href="info.html">Sobre nosotros</a></li>
+           <li><a href="detall.html">Destacat</a></li>
+           <li><a href="info.html">Sobre nosaltres</a></li>
        </ul>
    </nav>   
 </header>
@@ -35,39 +35,84 @@
           <th>Localidades</th>
         </tr>
         <tr>
-          <td>La Vida en Escena</td>
-          <td>15 de abril 2025 - 22 de mayo de 2025</td>
-          <td>Teatro del Sol</td>
-          <td>120</td>
+          <td>La Vida en Escena</td> <!-- Titol de l'obra -->
+          <td>15 de abril 2025 - 22 de mayo de 2025</td> <!-- Dates -->
+          <td>Teatro del Sol</td> <!-- Companyia -->
+          <td>120</td> <!-- Seients disponibles -->
         </tr>
         </tr>
-          <td>Turandot</td>
-          <td>2 de enero 2025 - 15 de marzo de 2025</td>
-          <td>Ópera Principal</td>
-          <td>150</td>
+          <td>Turandot</td> <!-- Titol de l'obra -->
+          <td>2 de enero 2025 - 15 de marzo de 2025</td> <!-- Dates -->
+          <td>Ópera Principal</td> <!-- Companyia -->
+          <td>150</td> <!-- Seients disponibles -->
         </tr>
         <tr>
-          <td>El amor de las Estaciones</td>
-          <td>14 de febrero 2025 - 30 de abril de 2025</td>
-          <td>Teatro del Alba</td>
-          <td>100</td>
+          <td>El amor de las Estaciones</td> <!-- Titol de l'obra -->
+          <td>14 de febrero 2025 - 30 de abril de 2025</td> <!-- Dates -->
+          <td>Teatro del Alba</td> <!-- Companyia -->
+          <td>100</td> <!-- Seients disponibles -->
     
       </table>
+       <!-- Formulario para solicitar información de entradas -->
+       <section class="formulario_entrades">
+         <form class=".formulario_venda">
+             <h2>Solicita Información para Comprar Entradas</h2>
+             
+             <!-- Campo para seleccionar obra -->
+             <label for="obra">Selecciona una obra:</label>
+             <select id="obra" name="obra">
+                 <option value="la_vida_en_escena">La Vida en Escena</option>
+                 <option value="turandot">Turandot</option>
+                 <option value="el_amor_de_las_estaciones">El amor de las Estaciones</option>
+             </select>
+ 
+             <!-- Campo para seleccionar fecha -->
+             <label for="fecha">Selecciona una fecha:</label>
+             <input type="date" id="fecha" name="fecha">
+ 
+             <!-- Opciones de tipo de entrada -->
+             <label>Tipo de entrada:</label>
+             <div>
+                 <input type="checkbox" id="general" name="entrada" value="general">
+                 <label for="general">General</label>
+             </div>
+             <div>
+                 <input type="checkbox" id="vip" name="entrada" value="vip">
+                 <label for="vip">VIP</label>
+             </div>
+ 
+             <!-- Cantidad de entradas -->
+             <label for="cantidad">Cantidad de entradas:</label>
+             <input type="number" id="cantidad" name="cantidad" min="1" max="10" placeholder="1">
+ 
+             <!-- Nombre del solicitante -->
+             <label for="nombre">Tu nombre:</label>
+             <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí">
+ 
+             <!-- Correo electrónico -->
+             <label for="email">Tu email:</label>
+             <input type="email" id="email" name="email" placeholder="example@correo.com">
+ 
+             <!-- Botón de envío -->
+             <button type="submit">Enviar Solicitud</button>
+         </form>
+     </section>
     </article>
 
+<!-- Dins la seguent secció, unicament s'han comentat els tres primers blocs, que son els unics que duen 
+    informació dins seu, es dona per fet que tots el comentaris aplican als sucsequents articles -->
     <article class="obras_teatro">
       <img src="media/lavidaenescena.jpg" alt="Imagen sobre la obra: actores en el escenario recibiendo un aplauso del público">
        <!--Una imagen generica que aparente ser de la obra-->
     <div>
-       <h1>La Vida en Escena</h1>
-        <h2>12 de enero, 2025 - Teatro del Sol</h2>
-        <p>
+       <h1>La Vida en Escena</h1> <!-- Títol -->
+        <h2>12 de enero, 2025 - Teatro del Sol</h2> <!--Subtitol-->
+        <p> <!--Text principal-->
             Una obra que explora las emociones humanas a través de historias cotidianas.
         </p>
     </div>
     </article>
-<!-- Dins la seguent secció, unicament s'han comentat els tres primers blocs, que son els unics que duen 
-    informació dins seu, es dona per fet que tots el comentaris aplican als sucsequents articles -->
+
     <article class="obras_teatro">
       <img src="media/turandot.jpg" alt="Imagen sobre la obra: actores en escena cantando"> 
       <!--Una imatge genèrica de l'obra-->

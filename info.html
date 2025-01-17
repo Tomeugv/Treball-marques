@@ -16,32 +16,32 @@
 <header>
     <nav> <!-- Definint un nav deixa clar que es tracta d'un menu de navegació-->
         <ul class="menu_navegacion"> <!--Definim que el bloc prendrà la forma d'una llista-->
-            <li><a href="index.html">Inicio</a></li> <!--Cada un dels items ens permet navegar entre les diferents seccions de la nostra pagina-->
+            <li><a href="index.html">Inici</a></li> <!--Cada un dels items ens permet navegar entre les diferents seccions de la nostra pagina-->
             <li><a href="articles.html">Programa 24/25</a></li>
-            <li><a href="detall.html">Destacados</a></li>
-            <li><a href="info.html">Sobre nosotros</a></li>
+            <li><a href="detall.html">Destacat</a></li>
+            <li><a href="info.html">Sobre nosaltres</a></li>
         </ul>
     </nav>   
 </header>
 
-<body class="cuerpo_sobre_nosotros">
+<body class="cuerpo_sobre_nosotros"> <!-- Repetim el format de la pagina de detall, una imatge de fons, un bloc translucid i text a sobre -->
     <section class="destacado" style="background-image: url('media/principal.jpg')";>
         <articulo class="texto_opaco">
-            <h3>Quien somos</h3>
-            <p>
+            <h3>Quien somos</h3> <!-- Títol-->
+            <p> <!-- Text principal -->
                 El Teatro Principal de Palma es un referente cultural en las Islas Baleares, comprometido con la promoción de las artes escénicas y el enriquecimiento del patrimonio cultural. Su proyecto cultural busca ofrecer una programación diversa que incluye teatro, danza, música y otras disciplinas artísticas, con un enfoque en la innovación y la accesibilidad para todos los públicos. Además, el teatro se dedica a la formación y el apoyo a nuevos talentos, al tiempo que preserva su rica historia como espacio emblemático en el corazón de Palma. A través de sus actividades y eventos, el Teatro Principal se posiciona como un motor de creatividad, reflexión y encuentro para la comunidad local e internacional.
             </p>
         </articulo>
     </section>
 
     <section class="ubicacion">
-        <!-- Ubicación -->
+        <!-- Ubicació -->
         <article class="ubicacion_info">
             <div>
-                <h1>Ubicación</h1>
-                <p>Visítanos en el siguiente mapa para ver nuestra ubicación:</p>
+                <h1>Ubicación</h1> <!-- Títol-->
+                <p>Visítanos en el siguiente mapa para ver nuestra ubicación:</p> <!-- Text principal -->
             </div>
-            <div class="mapa">
+            <div class="mapa"> <!-- Inserim un mapa interactiu dins la nostra pàgina, amb la ubicació del teatre -->
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6150.934710488518!2d2.648062375129361!3d39.57161620664332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297925a397fd3d7%3A0xc02caeac55531377!2sTeatro%20Principal%20de%20Palma!5e0!3m2!1ses!2ses!4v1732301149747!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 
@@ -49,29 +49,55 @@
             </div>
         </article>
     
-        <!-- Horario -->
+        <!-- Horari -->
         <article class="horario_info">
             <div>
-                <h1>Horario de Taquillas</h1>
-                <h2>De miércoles a sábado</h2>
+                <h1>Horario de Taquillas</h1> <!-- Títol-->
+                <h2>De miércoles a sábado</h2> <!-- Subtítol-->
                 <p>11:00 - 14:00 y 17:00 - 21:00</p>
                 <h2>Domingo, festivos y otros días con función</h2>
                 <p>1 hora antes del incio del espectáculo</p>
             </div>
         </article>
     
-        <!-- Contacto -->
+        <!-- Contacte -->
         <article class="contacto_info">
             <div>
-                <h1>Contacto</h1>
-                <p>Para más información, puedes contactarnos a través de los siguientes medios:</p>
-                <ul>
+                <h1>Contacto</h1> <!-- Títol-->
+                <p>Para más información, puedes contactarnos a través de los siguientes medios:</p> <!-- Text principal -->
+                <ul> <!-- Afegim la opcio de posar-se en contacte amb el teatre mitjançant tant telèfon com correu electrònic-->
                     <li>Email: <a href="mailto:taquilla@teatreprincipal.com">taquilla@teatreprincipal.com</a></li>
                     <li>Teléfono: <a href="tel:+1234567890">971 21 96 96 </a></li>
                 </ul>
             </div>
         </article>
     </section>
+
+    <!-- Formulari de contacte -->
+        <!-- El camp required dins els imputs força a que s'hagin d'emplenar el camp-->
+    <section class="formulario_seccion">
+        <article class="formulario_contacto">
+            <h1>Envíanos un mensaje</h1> <!-- Títol -->
+            <p>¿Tienes alguna consulta o sugerencia?</p> <!-- Subtitol -->
+            <p>Completa el formulario y nos pondremos en contacto contigo.</p> <!-- Text principal -->
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label> <!-- Espai per ficar el nom -->
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                
+                <label for="email">Correo electrónico:</label> <!-- Espai per ficar el correu -->
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                
+                <label for="mensaje">Mensaje:</label> <!-- Espai per ficar el missatge -->
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="4" required></textarea>
+                <!-- Botó per enviar el formulari -->
+                <button type="submit">Enviar</button>
+            </form>
+        </article>
+    </section>
+    
+
+
+
     
     
     <footer> <!-- Peu de pagina de la nostra pàgina -->

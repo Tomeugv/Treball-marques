@@ -1,0 +1,62 @@
+/* Secció del css dedicada integrament al formulari de contacte */
+.formulario_seccion {
+    display: flex;
+    justify-content: center; /* Centra horizontalment el bloc */
+    width: 100%;
+    padding: 30px; /* Augmenta l'espaciat al voltant del bloc */
+    margin-top: 20px;
+}
+
+/* Contenidor del formulari */
+.formulario_contacto {
+    display: flex;
+    flex-direction: column; /* Asegura que els elements interns estiguin apilats */
+    background: #fafafa;
+    border-radius: 12px; /* Arrodonim les voreres */
+    text-align: center;
+
+}
+
+.formulario_contacto h1,
+.formulario_contacto p {
+    width: 100%;
+    margin: 10px;
+
+}
+    
+/* Espaciat entre etiquetes i camps */
+.formulario_contacto label {
+    display: block; /* Asegura que cada etiqueta estigui a una nueva linia */
+    text-align: left; /* Alineam les etiquetes a l'esquerra */
+    margin-bottom: 10px; /* Espaciat entre els camps */
+}
+
+/* Camps d'entrada i area de text */
+.formulario_contacto input,
+.formulario_contacto textarea {
+    padding: 8px; /* Ajusta el tamany dels camps */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Espaciado entre els camps */
+}
+
+/* Botó de enviament */
+.formulario_contacto button {
+    background-color: #800000;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Ajusta el tamany del botó */
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+}
+
+.formulario_contacto button:hover {
+    background-color: #660000;
+}
+
+
+
+
+
+
