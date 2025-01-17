@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+   <!-- Definim les metadades de la nostra pàgina web -->
+    <meta charset="UTF-8"> <!--Definim el conjunt de caracters que emprarem dins la nostra pagina web-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="autores" content="Tomeu y Jesús">
     <meta name="description" content="Descripción del programa del teatro">
+    <link rel="stylesheet" href="estilos.css"> <!-- Cridam la pagina principal del nostre css -->
+    <!-- Donam un titol a la nostra pàgina -->
     <title>Programa 24/25</title>
-    <link rel="stylesheet" href="estilos.css">
+
 
 </head>
+<!-- Dins el header definim com funcionoara el menú de navegació de la nostra web -->
 <header>
-    <nav>
-        <ul class="menu_navegacion">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="articles.html">Programa 24/25</a></li>
-            <li><a href="detall.html">Destacados</a></li>
-            <li><a href="info.html">Sobre nosotros</a></li>
-        </ul>
-    </nav>   
+   <nav> <!-- Definint un nav deixa clar que es tracta d'un menu de navegació-->
+       <ul class="menu_navegacion"> <!--Definim que el bloc prendrà la forma d'una llista-->
+           <li><a href="index.html">Inicio</a></li> <!--Cada un dels items ens permet navegar entre les diferents seccions de la nostra pagina-->
+           <li><a href="articles.html">Programa 24/25</a></li>
+           <li><a href="detall.html">Destacados</a></li>
+           <li><a href="info.html">Sobre nosotros</a></li>
+       </ul>
+   </nav>   
 </header>
+
 <body>
-   <article class="obras_teatro">
-      <table class="info_table">
-         <h1>Obras próximas</h1>
-        <tr>
+   <article class="obras_teatro"> <!-- Donant aquesta classe a la taula, ens asseguram que no quedi dissonant dins la pàgina -->
+      <table class="info_table"> <!-- Definim la taula -->
+         <h1>Obras próximas</h1> <!-- Taula de obres properes, amb els titols, dates i entrades restants de cada una -->
+        <tr> <!-- Títols de cada una de les columnes -->
           <th>Obras</th>
           <th>Fechas</th>
           <th>Compañía</th>
@@ -61,14 +66,15 @@
         </p>
     </div>
     </article>
-
+<!-- Dins la seguent secció, unicament s'han comentat els tres primers blocs, que son els unics que duen 
+    informació dins seu, es dona per fet que tots el comentaris aplican als sucsequents articles -->
     <article class="obras_teatro">
       <img src="media/turandot.jpg" alt="Imagen sobre la obra: actores en escena cantando"> 
-      <!--Una imagen generica que aparente ser de la obra-->
+      <!--Una imatge genèrica de l'obra-->
           <div>
-        <h1>Turandot</h1>
-         <h2>26 de enero, 2025 - Ópera Principal</h2>
-         <p>
+        <h1>Turandot</h1> <!--Títol-->
+         <h2>26 de enero, 2025 - Ópera Principal</h2> <!--Subtitol-->
+         <p> <!--Text principal-->
             La majestuosa ópera de Puccini que narra la historia de la princesa Turandot y sus enigmas.
          </p>
      </div>
@@ -76,22 +82,23 @@
  
      <article class="obras_teatro">
       <img src="media/amordelasestaciones.jpg" alt="Imagen sobre la obra: actores posando con un ángel">
-        <!--Una imagen generica que aparente ser de la obra-->
+      <!--Una imatge genèrica de l'obra-->
      <div>
-        <h1>El Amor de las Estaciones</h1>
-         <h2>14 de febrero, 2025 - Teatro del Alba</h2>
-         <p>
+        <h1>El Amor de las Estaciones</h1> <!--Títol-->
+         <h2>14 de febrero, 2025 - Teatro del Alba</h2> <!--Subtitol-->
+         <p> <!--Text principal-->
             Una celebración del amor en sus múltiples formas a lo largo de las estaciones.
          </p>
      </div>
      </article>
 
      <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
+        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra">
+      <!--Una imatge genèrica de l'obra-->
      <div>
-        <h1>Carmen</h1>
-         <h2>28 de febrero, 2025 - Compañía Lírica Mediterránea</h2>
-         <p>
+        <h1>Carmen</h1> <!--Títol-->
+         <h2>28 de febrero, 2025 - Compañía Lírica Mediterránea</h2> <!--Subtitol-->
+         <p> <!--Text principal-->
             La apasionante ópera de Georges Bizet sobre el amor y la tragedia en Sevilla.
          </p>
      </div>
@@ -318,15 +325,15 @@
      </article>
   
      
-   <footer>
-      <a href="https://www.instagram.com/">
+     <footer> <!-- Peu de pagina de la nostra pàgina -->
+      <a href="https://www.instagram.com/"> <!-- Instagram-->
           <img src="media/ig.jpg" alt="Instagram">
       </a>
-      <p>&copy; 2024 Teatre Principal. Todos los derechos reservados.</p>
-      <a href="https://www.facebook.com/login/?locale=es_ES">
+      <p>&copy; 2024 Teatre Principal. Todos los derechos reservados.</p> <!-- Text legal genèric -->
+      <a href="https://www.facebook.com/login/?locale=es_ES"> <!-- Facebook -->
           <img src="media\Facebook.jpg" alt="Facebook">
       </a>
-   </footer>
+  </footer>
 
 </body>
 </html>
