@@ -77,11 +77,11 @@
 
 - A continuació, es poden trobar tres captures de pantalla de la nostra pagina principal vista des de tres resolucions diferents:
 
-1. [Primera resoluciò ](media_markdown\resolucio_1.png)
+1. [Primera resoluciò ](media_markdown/resolucio_1.png)
 
-2. [Segona resoluciò ](/media_markdown\resolucio_2.png)
+2. [Segona resoluciò ](/media_markdown/resolucio_2.png)
 
-3. [Tercera resoluciò ](media_markdown\resolucio_3.png)
+3. [Tercera resoluciò ](media_markdown/resolucio_3.png)
 
 ## <span style="color:red;">6. Repartició del treball</span>
 
