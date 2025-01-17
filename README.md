@@ -7,9 +7,9 @@
         - **detall.css** Continene los estilos usados unicamene en detall.html.
         - **index.css**  Continene los estilos usados unicamene en index.html.
         - **info.css**  Continene los estilos usados unicamene en info.html.
-        - **tabla.css** Contiene el estilo usado en nuestra página
-        - **tabla.css** Contiene el estilo usado en nuestra página
-        - **tabla.css** Contiene el estilo usado en nuestra página
+        - **tabla.css**  Conté l'estil emprat dins la nostra taula
+        - **formular_contacte.css** Conté l'estil emprat dins el formulari de contacte
+        - **formulari_contacte.css** Conté l'estil emprat dins el formulari d'entrades'
     - **/media.** Todas las imagnes que se usan en la pagina web estan alojadas en esta carpeta.
     - **detall.html** En esta sección se encuentra la descripción detallada de uno de los eventos que se llevarán a cabo en los proximos dias.
     - **info.html** Aqui se puede encontrar la información detallada del Teatro.
@@ -47,3 +47,44 @@
 ## <span style="color:red;">4. Formato responsive:</span>
 
 - Hemos optado por realizar un responsive que abarque un rango de resoluciones más elevado que el de un solo disposiivo, con el objetivo de que esta sea accesible en una mayor cantidad de dispositivos.
+
+# <span style="color:red;">Readme de la segona entrega del treball </span>
+## <span style="color:red;">1. Modificacions al treball previament entregat</span>
+
+- Primer de tot, s'ha afegit dins totes les pagines d'html les anotacions pertinents per tal de poder millorar considerablement la seca comprensió, i facilitar-ne la correcció i futrs treballs.
+
+- També s'ha afegit una nova carpeta al directori, anomenada media markdown, on es guardaran les capures de pantalla que es veuran a aquest document.
+
+- Finalment, al punt 5 d'aquesta secció es podràn trobar tres captures de pantalla de la pàgina principal de la nostra web baix tres resolucions de pantalla arbitràries
+
+## <span style="color:red;">2. Formularis</span>
+
+- S'han afegit dos formularis dins la pàgina web, un primer dins la secció de sobre nosaltres, amb el que l'usuari es pot posar en contacte amb el teatre. I un segon dins la seccio del programa que permet rebre infomació sobre la disponibilitat de les entrades.
+
+## <span style="color:red;">3. Expressions regulars dins els formularis</span>
+
+- Dins els camps per introduir el correu s'ha afegit la seguent expressió regular: pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$". Aquesta regla asegura que el correu inserit seguesqui un format vàlid, es a dir, una primera succesió de lletres, nombre i simbols vàlids; seguits de una @; seguit de una altre succesió; un punt i finalment un domini vàlid.
+
+## <span style="color:red;">4. Captures de pantalla formularis</span>
+
+- A continuació adjunt captures de pantalla dels formularis fets:
+
+1. [Captura del formualari d'informació de les entrades ](/media_markdown/formulari_entrades.png)
+
+2. [Captura del formualari de contacte ](/media_markdown/formulari_entrades.png)
+
+## <span style="color:red;">5. Captures responsive</span>
+
+- A continuació, es poden trobar tres captures de pantalla de la nostra pagina principal vista des de tres resolucions diferents:
+
+1. [Primera resoluciò ](media_markdown\resolucio_1.png)
+
+2. [Segona resoluciò ](/media_markdown\resolucio_2.png)
+
+3. [Tercera resoluciò ](media_markdown\resolucio_3.png)
+
+## <span style="color:red;">6. Repartició del treball</span>
+
+- Ho he fet sol :)
+
+

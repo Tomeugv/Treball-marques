@@ -83,9 +83,9 @@
             <form action="#" method="post">
                 <label for="nombre">Nom:</label> <!-- Espai per ficar el nom -->
                 <input type="text" id="nombre" name="nombre" placeholder="El teu nom" required>
-                
+                 <!-- Dins el camp del correu hem afegit una expressio regular que detecti si el correu pre un format vàlid-->               
                 <label for="email">Correu electrònic:</label> <!-- Espai per ficar el correu -->
-                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  required>
                 
                 <label for="mensaje">Missatge:</label> <!-- Espai per ficar el missatge -->
                 <textarea id="mensaje" name="mensaje" placeholder="Escrigui el seu missatge aquí..." rows="4" required></textarea>
