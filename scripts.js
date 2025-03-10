@@ -47,22 +47,42 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//FUNCIÓ PER A ACTIVAR EL MODE FOSC
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById("toggleMode");
 
-    toggleButton.addEventListener("click", function () {
-        // Alternar la classe "mode-fosc" al body
-        document.body.classList.toggle("mode-fosc");
-
-        // Canviar el text del botó segons l'estat
+        // Funció per actualitzar els colors del botó segons el mode
+    function actualitzarColorsBoto() {
         if (document.body.classList.contains("mode-fosc")) {
-            toggleButton.textContent = "Desactivar Mode Fosc";
+                // Mode fosc
+            toggleButton.style.backgroundColor = "#1a1a1a"; // Fons fosc
+            toggleButton.style.color = "#e0e0e0"; // Text clar
         } else {
-            toggleButton.textContent = "Activar Mode Fosc";
+                // Mode clar
+            toggleButton.style.backgroundColor = "#64b5f6"; // Fons clar
+            toggleButton.style.color = "#1a1a1a"; // Text fosc
+        }
+    }
+
+        // Efecte hover
+    toggleButton.addEventListener("mouseenter", function () {
+        if (document.body.classList.contains("mode-fosc")) {
+            toggleButton.style.backgroundColor = "#333"; // Hover en mode fosc
+        } else {
+            toggleButton.style.backgroundColor = "#42a5f5"; // Hover en mode clar
         }
     });
+
+    toggleButton.addEventListener("mouseleave", function () {
+            actualitzarColorsBoto(); // Restaurar colors segons el mode
+    });
+
+        // Alternar mode fosc
+    toggleButton.addEventListener("click", function () {
+        document.body.classList.toggle("mode-fosc");
+
+
+            // Actualitzar colors del botó
+            actualitzarColorsBoto();
+    });     
+    
 });
-
-
-
