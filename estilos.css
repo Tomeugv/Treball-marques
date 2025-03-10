@@ -115,3 +115,45 @@ footer a:hover img {
         max-width: 25px; /* Ajusta el tamaño de las imágenes en pantallas pequeñas */
     }
 }
+
+
+
+/* Estils per al mode fosc de la nostra pàgina web */
+body.mode-fosc,
+body.mode-fosc .ubicacion  {
+    background-color: #1a1a1a; /* Fons fosc principal */
+    color: #e0e0e0; /* Text clar */
+}
+
+body.mode-fosc .obras_teatro,
+body.mode-fosc .formulario,
+body.mode-fosc .ubicacion_info,
+body.mode-fosc .horario_info,
+body.mode-fosc .contacto_info,
+body.mode-fosc .formulario_contacto   {
+    background: #2d2d2d; /* Fons menys fosc per a les seccions */
+    color: #e0e0e0; /* Text clar */
+    border: 1px solid #444;
+}
+
+body.mode-fosc h1,
+body.mode-fosc h2 {
+    color: #64b5f6; /* Títols en blau clar */
+}
+
+body.mode-fosc p {
+    color: #bdbdbd; /* Text secundari en gris clar */
+}
+
+body.mode-fosc button {
+    background-color: #64b5f6; /* Botó en blau clar */
+    color: #1a1a1a; /* Text del botó en negre*/
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.mode-fosc button:hover {
+    background-color: #42a5f5; /* Canvi de color al passar el ratolí */
+}

@@ -10,7 +10,8 @@ article {
 }
 
 /* Contenedor para cada actuación */
-.obras_teatro {
+.obras_teatro,
+.formulario {
     display: flex;
     flex-direction: row; /* Elementos en fila */
     flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas pequeñas */
@@ -20,6 +21,7 @@ article {
     padding: 20px;
     border-radius: 10px;
 }
+
 
 /* Estilos para las imágenes */
 img {
@@ -53,7 +55,8 @@ p {
         align-items: flex-start; /* Alinear al inicio */
     }
 
-    .obras_teatro {
+    .obras_teatro,
+    .formulario {
         flex-direction: column; /* Reorganizar en columna */
         align-items: center; /* Centrar contenido */
         padding: 15px;
@@ -77,7 +80,8 @@ p {
 }
 
 @media screen and (max-width: 480px) {
-    .obras_teatro {
+    .obras_teatro,
+    .formulario {
         padding: 10px; /* Reducir el padding en dispositivos muy pequeños */
     }
 
@@ -96,4 +100,20 @@ p {
     p {
         font-size: 0.8rem;
     }
+}
+button {
+    background-color: #800000; /*color de fons del botó*/
+    color: white; /*color del text dins el botó*/
+    border: none; /*ens aseguram que no hi hagi un marge al voltat*/
+    padding: 10px;
+    border-radius: 5px;
+    width: 10%;
+    justify-content: center;   
+}
+/*Apfegim aquesta secció per a poder ocultar el formulari*/
+.formulario_entrades {
+    display: block; /* Mostrar per defecte */
+}
+.formulario_entrades.ocult {
+    display: none; /* Ocultar quan s'afegeix la classe "ocult" */
 }
