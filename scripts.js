@@ -86,3 +86,60 @@ document.addEventListener("DOMContentLoaded", function () {
     });     
     
 });
+
+
+
+let indexActual = 0; // Índex de la secció actual
+const intervalTemps = 5000; // Canviar de secció cada 5 segons (5000 ms)
+
+// Funció per moure el carrusel automàticament
+function moureCarruselAutomatic() {
+    const contingut = document.querySelector(".carrusel-contingut");
+    const items = document.querySelectorAll(".carrusel-item");
+    const totalItems = items.length;
+
+    // Calcular el nou índex
+    indexActual = (indexActual + 1) % totalItems;
+
+    // Moure el contingut
+    contingut.style.transform = `translateX(-${indexActual * 100}%)`;
+
+    // Actualitzar indicadors
+    actualitzarIndicadors();
+}
+
+// Funció per mostrar una secció específica
+function mostrarSeccio(index) {
+    indexActual = index;
+    const contingut = document.querySelector(".carrusel-contingut");
+    contingut.style.transform = `translateX(-${indexActual * 100}%)`;
+    actualitzarIndicadors();
+}
+
+// Funció per actualitzar els indicadors
+function actualitzarIndicadors() {
+    const indicadors = document.querySelectorAll(".carrusel-indicador");
+    indicadors.forEach((indicador, index) => {
+        if (index === indexActual) {
+            indicador.classList.add("actiu");
+        } else {
+            indicador.classList.remove("actiu");
+        }
+    });
+}
+
+// Iniciar el carrusel automàtic
+let interval = setInterval(moureCarruselAutomatic, intervalTemps);
+
+// Aturar el carrusel automàtic quan l'usuari interactua amb els indicadors
+const indicadors = document.querySelectorAll(".carrusel-indicador");
+indicadors.forEach((indicador, index) => {
+    indicador.addEventListener("click", () => {
+        clearInterval(interval); // Aturar l'interval
+        mostrarSeccio(index); // Mostrar la secció seleccionada
+        interval = setInterval(moureCarruselAutomatic, intervalTemps); // Reiniciar l'interval
+    });
+});
+
+// Inicialitzar indicadors
+actualitzarIndicadors();

@@ -26,33 +26,41 @@
 
 <body>
   
-<main>
-<!-- Dins el main d'aquesta secció es defineixen els tres blocs que ocupen la pàgina-->
-  <section class="obras_teatro"> 
-    <h1>La Vida en Escena</h1> <!--Títol-->
-    <h2>12 de enero, 2025 - Teatro del Sol</h2> <!--Subtitol-->
-    <p>Una obra que explora las emociones humanas a través de historias cotidianas. <!--Text principal-->
-        <img src="media/lavidaenescena.jpg" alt="Imagen sobre la obra: actores en el escenario recibiendo un aplauso del público"><!--Cridam a la imatge que es veurà a la secció-->
-    </p>
-  </section>
-   
-  <section class="obras_teatro">
-    <h1>Turandot</h1> <!--Títol-->
-    <h2>26 de enero, 2025 - Ópera Principal</h2> <!--Subtitol-->
-    <p>La majestuosa ópera de Puccini que narra la historia de la princesa Turandot y sus enigmas. <!--Text principal-->
-        <img src="media/turandot.jpg" alt="Imagen sobre la obra: actores en escena cantando"><!--Cridam a la imatge que es veurà a la secció-->
-    </p>
-  </section> 
-  
-  <section class="obras_teatro">
-    <h1>El Amor de las Estaciones</h1> <!--Títol-->
-    <h2>14 de febrero, 2025 - Teatro del Alba</h2> <!--Subtitol-->
-    <p>Una celebración del amor en sus múltiples formas a lo largo de las estaciones. <!--Text principal-->
-        <img src="media/amordelasestaciones.jpg" alt="Imagen sobre la obra: actores posando con un ángel"><!--Cridam a la imatge que es veurà a la secció-->
-    </p>
-  </section> 
-</main>     
-
+    <main>
+        <!-- Contenidor del carrusel -->
+        <div class="carrusel">
+            <!-- Seccions del carrusel -->
+            <div class="carrusel-contingut">
+                <section class="obras_teatro carrusel-item">
+                    <h1>La Vida en Escena</h1>
+                    <h2>12 de enero, 2025 - Teatro del Sol</h2>
+                    <p>Una obra que explora las emociones humanas a través de historias cotidianas.</p>
+                    <img src="media/lavidaenescena.jpg" alt="Imagen sobre la obra: actores en el escenario recibiendo un aplauso del público">
+                </section>
+    
+                <section class="obras_teatro carrusel-item">
+                    <h1>Turandot</h1>
+                    <h2>26 de enero, 2025 - Ópera Principal</h2>
+                    <p>La majestuosa ópera de Puccini que narra la historia de la princesa Turandot y sus enigmas.</p>
+                    <img src="media/turandot.jpg" alt="Imagen sobre la obra: actores en escena cantando">
+                </section>
+    
+                <section class="obras_teatro carrusel-item">
+                    <h1>El Amor de las Estaciones</h1>
+                    <h2>14 de febrero, 2025 - Teatro del Alba</h2>
+                    <p>Una celebración del amor en sus múltiples formas a lo largo de las estaciones.</p>
+                    <img src="media/amordelasestaciones.jpg" alt="Imagen sobre la obra: actores posando con un ángel">
+                </section>
+            </div>
+    
+            <!-- Indicadors del carrusel (punts) -->
+            <div class="carrusel-indicadors">
+                <span class="carrusel-indicador" onclick="mostrarSeccio(0)"></span>
+                <span class="carrusel-indicador" onclick="mostrarSeccio(1)"></span>
+                <span class="carrusel-indicador" onclick="mostrarSeccio(2)"></span>
+            </div>
+        </div>
+    </main>
 <footer> <!-- Peu de pagina de la nostra pàgina -->
     <a href="https://www.instagram.com/"> <!-- Instagram-->
         <img src="media/ig.jpg" alt="Instagram">

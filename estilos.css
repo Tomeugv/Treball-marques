@@ -157,3 +157,80 @@ body.mode-fosc button {
 body.mode-fosc button:hover {
     background-color: #42a5f5; /* Canvi de color al passar el ratolí */
 }
+
+/* Estils del carrusel */
+.carrusel {
+    position: relative;
+    max-width: 1200px; /* Amplada màxima del carrusel */
+    margin: 0 auto; /* Centrar el carrusel */
+    overflow: hidden; /* Amagar contingut que surt de la finestra */
+}
+
+.carrusel-contingut {
+    display: flex;
+    transition: transform 0.5s ease; /* Transició suau */
+}
+
+.carrusel-item {
+    min-width: 100%; /* Cada ítem ocupa el 100% del contenidor */
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f4f4f4; /* Fons clar */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height: 400px; /* Doble de alt */
+    overflow: hidden; /* Evita que el contingut es desbordi */
+}
+
+.carrusel-item h1,
+.carrusel-item h2,
+.carrusel-item p {
+    margin: 10px 0; /* Espaiat entre els elements de text */
+}
+
+.carrusel-item img {
+    max-width: 100%; /* La imatge no excedeix l'amplada del contenidor */
+    max-height: 200px; /* Alçada màxima de la imatge */
+    height: auto; /* Manté la relació d'aspecte */
+    border-radius: 8px;
+    object-fit: cover; /* Ajusta la imatge dins del contenidor */
+}
+
+/* Indicadors del carrusel */
+.carrusel-indicadors {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carrusel-indicador {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Color dels indicadors */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carrusel-indicador.actiu {
+    background-color: rgba(0, 0, 0, 1); /* Color per a l'indicador actiu */
+}
+
+/* Estil responsiu */
+@media (max-width: 768px) {
+    .carrusel-item {
+        height: auto; /* Alçada automàtica en pantalles petites */
+        padding: 15px;
+    }
+
+    .carrusel-item img {
+        max-height: 150px; /* Alçada màxima de la imatge en pantalles petites */
+    }
+}
