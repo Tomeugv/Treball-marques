@@ -98,273 +98,399 @@
 
 <!-- Dins la seguent secció, unicament s'han comentat els tres primers blocs, que son els unics que duen 
     informació dins seu, es dona per fet que tots el comentaris aplican als sucsequents articles -->
-    <article class="obras_teatro">
-      <img src="media/lavidaenescena.jpg" alt="Imagen sobre la obra: actores en el escenario recibiendo un aplauso del público">
-       <!--Una imagen generica que aparente ser de la obra-->
-    <div>
-       <h1>La Vida en Escena</h1> <!-- Títol -->
-        <h2>12 de enero, 2025 - Teatro del Sol</h2> <!--Subtitol-->
-        <p> <!--Text principal-->
-            Una obra que explora las emociones humanas a través de historias cotidianas.
-        </p>
-    </div>
-    </article>
+<!-- Contenedor para la imagen ampliada (solo uno para toda la página) -->
+<div id="contenedor-ampliado" class="contenedor-ampliado">
+   <span class="cerrar" onclick="cerrarImagen()">&times;</span>
+   <img id="imagen-ampliada" class="imagen-ampliada">
+</div>
+   
+   <article class="obras_teatro">
+      <!-- Imagen en miniatura -->
+      <img 
+          src="media/lavidaenescena.jpg" 
+          alt="Imagen sobre la obra: actores en el escenario recibiendo un aplauso del público"
+          class="miniatura"
+          onclick="ampliarImagen('media/lavidaenescena.jpg')"
+      >
 
-    <article class="obras_teatro">
-      <img src="media/turandot.jpg" alt="Imagen sobre la obra: actores en escena cantando"> 
-      <!--Una imatge genèrica de l'obra-->
-          <div>
-        <h1>Turandot</h1> <!--Títol-->
-         <h2>26 de enero, 2025 - Ópera Principal</h2> <!--Subtitol-->
-         <p> <!--Text principal-->
-            La majestuosa ópera de Puccini que narra la historia de la princesa Turandot y sus enigmas.
-         </p>
-     </div>
-     </article>
- 
-     <article class="obras_teatro">
-      <img src="media/amordelasestaciones.jpg" alt="Imagen sobre la obra: actores posando con un ángel">
-      <!--Una imatge genèrica de l'obra-->
-     <div>
-        <h1>El Amor de las Estaciones</h1> <!--Títol-->
-         <h2>14 de febrero, 2025 - Teatro del Alba</h2> <!--Subtitol-->
-         <p> <!--Text principal-->
-            Una celebración del amor en sus múltiples formas a lo largo de las estaciones.
-         </p>
-     </div>
-     </article>
+      <div>
+          <h1>La Vida en Escena</h1> <!-- Título -->
+          <h2><span class="data">12 de enero, 2025</span> - Teatro del Sol</h2> <!-- Subtítulo -->
+          <p> <!-- Texto principal -->
+              Una obra que explora las emociones humanas a través de historias cotidianas.
+          </p>
+      </div>
+  </article>   
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra">
-      <!--Una imatge genèrica de l'obra-->
-     <div>
-        <h1>Carmen</h1> <!--Títol-->
-         <h2>28 de febrero, 2025 - Compañía Lírica Mediterránea</h2> <!--Subtitol-->
-         <p> <!--Text principal-->
-            La apasionante ópera de Georges Bizet sobre el amor y la tragedia en Sevilla.
-         </p>
-     </div>
-     </article>
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>El Circo de los Sueños</h1>
-         <h2>10 de marzo, 2025 - Teatro Ambulante</h2>
-         <p>
-            Una mezcla de teatro y acrobacia en un espectáculo lleno de magia y fantasía.
-         </p>
-     </div>
-     </article>
+  <!-- Artículos con imágenes en miniatura -->
+  <article class="obras_teatro">
+      <img 
+          src="media/turandot.jpg" 
+          alt="Imagen sobre la obra: actores en escena cantando"
+          class="miniatura"
+          onclick="ampliarImagen('media/turandot.jpg')"
+      >
+      <div>
+          <h1>Turandot</h1>
+          <h2><span class="data">26 de enero, 2025</span> - Ópera Principal</h2>
+          <p>
+              La majestuosa ópera de Puccini que narra la historia de la princesa Turandot y sus enigmas.
+          </p>
+      </div>
+  </article>
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>Raíces y Alas</h1>
-         <h2>24 de marzo, 2025 - Grupo Terrenal</h2>
-         <p>
-            Una reflexión poética sobre el arraigo y el deseo de libertad.
-         </p>
-     </div>
-     </article>
+  <article class="obras_teatro">
+      <img 
+          src="media/amordelasestaciones.jpg" 
+          alt="Imagen sobre la obra: actores posando con un ángel"
+          class="miniatura"
+          onclick="ampliarImagen('media/amordelasestaciones.jpg')"
+      >
+      <div>
+          <h1>El Amor de las Estaciones</h1>
+          <h2><span class="data">14 de febrero, 2025</span> - Teatro del Alba</h2>
+          <p>
+              Una celebración del amor en sus múltiples formas a lo largo de las estaciones.
+          </p>
+      </div>
+  </article>
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>Los Secretos del Tiempo</h1>
-         <h2>7 de abril, 2025 - Escena Clásica</h2>
-         <p>
-            Una adaptación moderna de un clásico sobre el paso del tiempo y la nostalgia.
-         </p>
-     </div>
-     </article>
-     
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>Tosca</h1>
-         <h2>21 de abril, 2025 - Ópera Principal</h2>
-         <p>
-            Una ópera de Giacomo Puccini que combina amor, política y sacrificio en un intenso drama.
-         </p>
-     </div>
-     </article>
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>Carmen</h1>
+          <h2><span class="data">28 de febrero, 2025</span> - Compañía Lírica Mediterránea</h2>
+          <p>
+              La apasionante ópera de Georges Bizet sobre el amor y la tragedia en Sevilla.
+          </p>
+      </div>
+  </article>
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>El Reino Invisible</h1>
-         <h2>12 de mayo, 2025 - Teatro Fantasía</h2>
-         <p>
-            Una obra fantástica sobre un reino oculto entre los sueños y la realidad.
-         </p>
-     </div>
-     </article>
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>El Circo de los Sueños</h1>
+          <h2><span class="data">10 de marzo, 2025</span> - Teatro Ambulante</h2>
+          <p>
+              Una mezcla de teatro y acrobacia en un espectáculo lleno de magia y fantasía.
+          </p>
+      </div>
+  </article>
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>La Traviata</h1>
-         <h2>26 de mayo, 2025 - Compañía Lírica de Palma</h2>
-         <p>
-            La historia de amor y sacrificio de Violetta, en una de las óperas más populares de Verdi.
-         </p>
-     </div>
-     </article>
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>Raíces y Alas</h1>
+          <h2><span class="data">24 de marzo, 2025</span> - Grupo Terrenal</h2>
+          <p>
+              Una reflexión poética sobre el arraigo y el deseo de libertad.
+          </p>
+      </div>
+  </article>
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>Bajo el Mismo Sol</h1>
-         <h2>15 de junio, 2025  - Arte Global</h2>
-         <p>
-            Un drama social que conecta culturas y desafíos comunes.
-         </p>
-     </div>
-     </article>
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>Los Secretos del Tiempo</h1>
+          <h2><span class="data">7 de abril, 2025</span> - Escena Clásica</h2>
+          <p>
+              Una adaptación moderna de un clásico sobre el paso del tiempo y la nostalgia.
+          </p>
+      </div>
+  </article>
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>Sueños de una Noche de Verano</h1>
-         <h2>30 de junio, 2025 - Teatro Shakespeare</h2>
-         <p>
-            Una reinterpretación vibrante del clásico de Shakespeare.
-         </p>
-     </div>
-     </article>
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>Tosca</h1>
+          <h2><span class="data">21 de abril, 2025</span> - Ópera Principal</h2>
+          <p>
+              Una ópera de Giacomo Puccini que combina amor, política y sacrificio en un intenso drama.
+          </p>
+      </div>
+  </article>
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>Caminos Cruzados</h1>
-         <h2>13 de julio, 2025 - Compañía Andante</h2>
-         <p>
-            Historias entrelazadas de viajeros en una estación de tren.
-         </p>
-     </div>
-     </article>
-      
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>El Arte del Silencio</h1>
-         <h2>27 de julio, 2025 - Teatro de la Sombra</h2>
-         <p>
-            Una obra sin palabras que comunica con gestos y emociones.
-         </p>
-     </div>
-     </article>
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>El Reino Invisible</h1>
+          <h2><span class="data">12 de mayo, 2025</span> - Teatro Fantasía</h2>
+          <p>
+              Una obra fantástica sobre un reino oculto entre los sueños y la realidad.
+          </p>
+      </div>
+  </article>
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>Ecos del Bosque</h1>
-         <h2>10 de agosto, 2025 - Grupo Raíz</h2>
-         <p>
-            Una experiencia teatral inmersiva que celebra la naturaleza.
-         </p>
-     </div>
-     </article>
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>La Traviata</h1>
+          <h2><span class="data">26 de mayo, 2025</span> - Compañía Lírica de Palma</h2>
+          <p>
+              La historia de amor y sacrificio de Violetta, en una de las óperas más populares de Verdi.
+          </p>
+      </div>
+  </article>
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>Máscaras de la Ciudad</h1>
-         <h2>24 de agosto, 2025 - Teatro Urbano</h2>
-         <p>
-            Una obra contemporánea que explora la identidad en el caos de la ciudad.
-         </p>
-     </div>
-     </article>
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>Bajo el Mismo Sol</h1>
+          <h2><span class="data">15 de junio, 2025</span> - Arte Global</h2>
+          <p>
+              Un drama social que conecta culturas y desafíos comunes.
+          </p>
+      </div>
+  </article>
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>El Último Acto</h1>
-         <h2>14 de septiembre, 2025 - Escena Final</h2>
-         <p>
-            Una obra metateatral sobre los desafíos del mundo artístico.
-         </p>
-     </div>
-     </article>
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>Sueños de una Noche de Verano</h1>
+          <h2><span class="data">30 de junio, 2025</span> - Teatro Shakespeare</h2>
+          <p>
+              Una reinterpretación vibrante del clásico de Shakespeare.
+          </p>
+      </div>
+  </article>
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>Fuegos Artificiales</h1>
-         <h2>28 de septiembre, 2025 - Teatro Lumina</h2>
-         <p>
-            Un drama familiar con un toque de humor y esperanza.
-         </p>
-     </div>
-     </article>
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>Caminos Cruzados</h1>
+          <h2><span class="data">13 de julio, 2025</span> - Compañía Andante</h2>
+          <p>
+              Historias entrelazadas de viajeros en una estación de tren.
+          </p>
+      </div>
+  </article>
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>La Casa de los Ecos</h1>
-         <h2>12 de octubre, 2025 - Teatro Gótico</h2>
-         <p>
-            Un relato de suspenso que ocurre en una misteriosa mansión.
-         </p>
-     </div>
-     </article>
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>El Arte del Silencio</h1>
+          <h2><span class="data">27 de julio, 2025</span> - Teatro de la Sombra</h2>
+          <p>
+              Una obra sin palabras que comunica con gestos y emociones.
+          </p>
+      </div>
+  </article>
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>El Barbero de Sevilla</h1>
-         <h2>26 de octubre, 2025 - Compañía Lírica Nacional</h2>
-         <p>
-            La hilarante ópera cómica de Rossini sobre engaños y travesuras en la Sevilla del siglo XVIII.
-         </p>
-     </div>
-     </article>
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>Ecos del Bosque</h1>
+          <h2><span class="data">10 de agosto, 2025</span> - Grupo Raíz</h2>
+          <p>
+              Una experiencia teatral inmersiva que celebra la naturaleza.
+          </p>
+      </div>
+  </article>
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>Las Voces del Pueblo</h1>
-         <h2>9 de noviembre, 2025 - Teatro Popular</h2>
-         <p>
-            Un retrato colectivo de historias de resistencia y esperanza.
-         </p>
-     </div>
-     </article>
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>Máscaras de la Ciudad</h1>
+          <h2><span class="data">24 de agosto, 2025</span> - Teatro Urbano</h2>
+          <p>
+              Una obra contemporánea que explora la identidad en el caos de la ciudad.
+          </p>
+      </div>
+  </article>
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>El Puente de los Deseos</h1>
-         <h2>23 de noviembre, 2025 - Arte en Escena</h2>
-         <p>
-            Una emotiva obra sobre los sueños y promesas incumplidas.
-         </p>
-     </div>
-     </article>
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>El Último Acto</h1>
+          <h2><span class="data">14 de septiembre, 2025</span> - Escena Final</h2>
+          <p>
+              Una obra metateatral sobre los desafíos del mundo artístico.
+          </p>
+      </div>
+  </article>
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>Navidad en el Corazón</h1>
-         <h2>8 de diciembre, 2025 - Escena Festiva</h2>
-         <p>
-            Un cuento navideño que celebra la unión y el espíritu festivo.
-         </p>
-     </div>
-     </article>
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>Fuegos Artificiales</h1>
+          <h2><span class="data">28 de septiembre, 2025</span> - Teatro Lumina</h2>
+          <p>
+              Un drama familiar con un toque de humor y esperanza.
+          </p>
+      </div>
+  </article>
 
-     <article class="obras_teatro">
-        <img src="https://via.placeholder.com/1200x800" alt="Imagen sobre la obra"><!--Una imagen generica que aparente ser de la obra-->
-     <div>
-        <h1>Adiós al Año</h1>
-         <h2>31 de diciembre, 2025 -  Teatro Final</h2>
-         <p>
-            Una despedida teatral al año con música, humor y reflexión.
-         </p>
-     </div>
-     </article>
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>La Casa de los Ecos</h1>
+          <h2><span class="data"/>12 de octubre, 2025</span> - Teatro Gótico</h2>
+          <p>
+              Un relato de suspenso que ocurre en una misteriosa mansión.
+          </p>
+      </div>
+  </article>
+
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>El Barbero de Sevilla</h1>
+          <h2><span class="data">26 de octubre, 2025</span> - Compañía Lírica Nacional</h2>
+          <p>
+              La hilarante ópera cómica de Rossini sobre engaños y travesuras en la Sevilla del siglo XVIII.
+          </p>
+      </div>
+  </article>
+
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>Las Voces del Pueblo</h1>
+          <h2><span class="data">9 de noviembre, 2025</span> - Teatro Popular</h2>
+          <p>
+              Un retrato colectivo de historias de resistencia y esperanza.
+          </p>
+      </div>
+  </article>
+
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>El Puente de los Deseos</h1>
+          <h2><span class="data">23 de noviembre, 2025</span> - Arte en Escena</h2>
+          <p>
+              Una emotiva obra sobre los sueños y promesas incumplidas.
+          </p>
+      </div>
+  </article>
+
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>Navidad en el Corazón</h1>
+          <h2><span class="data">8 de diciembre, 2025</span> - Escena Festiva</h2>
+          <p>
+              Un cuento navideño que celebra la unión y el espíritu festivo.
+          </p>
+      </div>
+  </article>
+
+  <article class="obras_teatro">
+      <img 
+          src="https://via.placeholder.com/1200x800" 
+          alt="Imagen sobre la obra"
+          class="miniatura"
+          onclick="ampliarImagen('https://via.placeholder.com/1200x800')"
+      >
+      <div>
+          <h1>Adiós al Año</h1>
+          <h2><span class="data">31 de diciembre, 2025</span> - Teatro Final</h2>
+          <p>
+              Una despedida teatral al año con música, humor y reflexión.
+          </p>
+      </div>
+  </article>
   
      
    <footer> <!-- Peu de pagina de la nostra pàgina -->
