@@ -30,21 +30,23 @@ main > section p {
     margin: 10px 0; /* Espaciado entre los elementos de texto */
 }
 
+
 /* Estilos específicos para el bloque de comentarios */
 #seccion-comentarios {
-    max-width: 200px;
-    margin: 80px auto; /* Espacio para el nav y el footer */
+    max-width: 800px; /* Ancho máximo deseado */
+    margin: 80px auto; /* Centrado y espacio para el nav y el footer */
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Asegura que el contenedor ocupe el ancho disponible */
 }
 
 /* Estilos para los botones */
 #mostrarComentarios,
 #formularioComentario button {
-    width: 100%;
+    width: 100%; /* Ambos botones ocupan el 100% del ancho del contenedor */
     padding: 15px;
     font-size: 16px;
     border: none;
@@ -73,7 +75,7 @@ main > section p {
 
 /* Estilos para la lista de comentarios */
 #listaComentarios {
-    width: 100%;
+    width: 100%; /* Ocupa el mismo ancho que los botones */
     max-height: 300px;
     overflow-y: auto;
     margin-top: 20px;
@@ -96,7 +98,7 @@ main > section p {
 
 /* Estilos para el formulario de comentarios */
 #formularioComentario {
-    width: 100%;
+    width: 100%; /* Ocupa el mismo ancho que los botones */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -104,7 +106,7 @@ main > section p {
 }
 
 #nuevoComentario {
-    width: 100%;
+    width: 96%; /* Ocupa el mismo ancho que los botones */
     height: 100px;
     padding: 10px;
     border: 1px solid #ccc;
