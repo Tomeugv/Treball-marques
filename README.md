@@ -87,7 +87,7 @@
 
 - Ho he fet sol :)
 
-# <span style="color:red;">Readme de la segona entrega del treball </span>
+# <span style="color:red;">Readme de la tercera entrega del treball </span>
 
 ## <span style="color:red;">1. Implementació d'estructura d'objectes</span>
 
