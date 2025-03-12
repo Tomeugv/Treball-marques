@@ -143,3 +143,36 @@ indicadors.forEach((indicador, index) => {
 
 // Inicialitzar indicadors
 actualitzarIndicadors();
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const mostrarComentariosBtn = document.getElementById('mostrarComentarios');
+    const listaComentariosDiv = document.getElementById('listaComentarios');
+    const comentariosUl = document.getElementById('comentarios');
+    const formularioComentario = document.getElementById('formularioComentario');
+    const nuevoComentarioInput = document.getElementById('nuevoComentario');
+
+    // Mostrar/Ocultar la lista de comentarios
+    mostrarComentariosBtn.addEventListener('click', function () {
+        listaComentariosDiv.classList.toggle('hidden');
+    });
+
+    // Manejar el envío del formulario
+    formularioComentario.addEventListener('submit', function (event) {
+        event.preventDefault(); // Evitar que el formulario se envíe
+
+        const comentarioTexto = nuevoComentarioInput.value.trim();
+
+        if (comentarioTexto !== "") {
+            // Crear un nuevo elemento de lista y añadirlo a la lista de comentarios
+            const nuevoComentarioLi = document.createElement('li');
+            nuevoComentarioLi.textContent = comentarioTexto;
+            comentariosUl.appendChild(nuevoComentarioLi);
+
+            // Limpiar el campo de texto
+            nuevoComentarioInput.value = '';
+        }
+    });
+});
