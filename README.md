@@ -87,4 +87,40 @@
 
 - Ho he fet sol :)
 
+# <span style="color:red;">Readme de la segona entrega del treball </span>
 
+## <span style="color:red;">1. Implementació d'estructura d'objectes</span>
+
+-S'ha optat per afegir tres funcions a la consola de la pàgina web. La primera de totes pren la informació completa del programa anual del nostre teatre, organitzant-la dins un array d'objectes. La segona, filtra les actuacions per tal de només mostrar les que es duguin a terme a partir del mes de juny. I fimalment, la tarcera de totes es la encarregada de ordernar les acutacions per ordre invers de mesos, es a dir, de desembre fins a gener.
+
+## <span style="color:red;">2. Mostrar/ocultar elements de la web</span>
+
+-A la pàgina del programa s'ha afegit un botó que ens permet tant ocultar com ensenyar el formulari d'informació sobre l'adquisició d'entrades.
+
+## <span style="color:red;">3. Mode clar i obscur</span>
+
+-Al footer de cada una de les pagines de la nostra web, s'ha implementat un botó que dona l'opció d'alternar entre el tema classic vermellos de la nosta web i un de mes obscur.
+
+## <span style="color:red;">4. Comentaris</span>
+
+-A la zona inferior de la nostra web, s'ha afegit un formulari de comentaris, que permet a l'usuari afegir comentaris així com ensenyar i ocultar tots esl comentaris previament fets.
+
+## <span style="color:red;">5. Element dinàmic</span>
+
+-S'ha afegit mitjançant javascript el diseny dinàmic al boto de tema fosc/clar que el permet canviar lleugerament de color al passar el ratolí per sobre
+
+## <span style="color:red;">6. Banner d'imatges</span>
+
+-El petit resum de obres destacades que ocupava la pàgina principal de la nostra web ha estat substituit per un banner automàtic que retén la mateixa informació que ocupava previament el seu lloc.
+
+## <span style="color:red;">7. Ampliació d'imatges</span>
+
+-S'ha afegit l'opcio de poder fer gan les miniatures de cada una de les imatges de la secció del programa del nostre teatre. Cal recalcar que tot i que el programa funciona per a cada un dels articles de la secció nomes es apreciable als tres primers, que son els unics amb imatges concretes,
+
+## <span style="color:red;">8. Validacio de formularis</span>
+
+-A aquesta secció simplement s'ha substituit la validacio del formulari d'informacio, per un script identic amb javascript
+
+## <span style="color:red;">9. Repartiment de feina</span>
+
+-UN pic més, la totalita de la pràctica l'he feta jo :)
