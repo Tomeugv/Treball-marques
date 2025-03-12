@@ -123,4 +123,4 @@
 
 ## <span style="color:red;">9. Repartiment de feina</span>
 
--UN pic més, la totalita de la pràctica l'he feta jo :)
+-Un pic més, la totalita de la pràctica l'he feta jo :)
